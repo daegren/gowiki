@@ -1,5 +1,23 @@
-<h1>{{.Title}}</h1>
+<!DOCTYPE html>
+<html lang="en">
 
-<p>[<a href="/edit/{{.Title}}">edit</a>]</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Go Wiki</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
 
-<div>{{printf "%s" .Body}}</div>
+<body>
+  <main class="container">
+    <h1>{{.Title}}</h1>
+
+    <p>[<a href="/edit/{{.Title}}">edit</a>]</p>
+
+    <div>{{printf "%s" .Body}}</div>
+  </main>
+</body>
+
+</html>
